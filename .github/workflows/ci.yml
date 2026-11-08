@@ -53,9 +53,9 @@ jobs:
   image:
     needs: test
     runs-on: ubuntu-latest
-    # ИНЦИДЕНТ 1: нет packages: write.
     permissions:
       contents: read
+      packages: write
     steps:
       - name: Checkout
         uses: actions/checkout@v7
